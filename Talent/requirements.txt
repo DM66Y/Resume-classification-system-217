@@ -1,0 +1,11 @@
+python_speech_features
+TensorFlow = 1.14
+Keras
+Numpy
+wave
+matplotlib
+math
+Scipy
+h5py
+urllib
+pandas

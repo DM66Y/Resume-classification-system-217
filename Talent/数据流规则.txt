@@ -1,0 +1,8 @@
+
+1. 收发器把 user_id，文件编号，文件（mp4、wav、doc）地址 存入数据库
+
+2. 再根据 user_id 把文件地址从数据库中取出
+
+3. 根据文件类型的不同，把doc文件地址送入段明扬模型，把wav文件地址送入英明模型，把mp4文件地址送入沛朱模型
+
+4. 模型返回 str 类型结果， 把结果存入result[]中，result中存放的是每个文件的结果，{user_id: XXX， file_id: XXX, result: XXX}

@@ -1,0 +1,27 @@
+#-*- coding：utf-8 -*-
+#@Time  : 2020/3/22
+#@Author : Li Yue
+#@FileName: Read me.txt
+#@Software : Pycharm
+
+包含文件:
+1.stress_test.py : 测试，发送文件至服务器（收发器）
+2.receive_service.py : 收发器，将接收到的文件（mp4、wav、doc）保存至数据库中(talent_1)。
+3.serve_send.py : 该函数参数为user_id， 根据这名用户的id，从数据库中取出该用户对应的 file_id 以及 file本身
+                    再把file传入三个模型，得到结果 result[]，result中存放的是每个文件的结果，{user_id: XXX， file_id: XXX, result: XXX}
+4. talent_1.sql : 建表语句
+
+
+剩余步骤：完善serve_send.py函数，把文件送入虚拟机模型判别
+
+
+运行顺序：
+先开2，在开1, 3函数嵌入在1中
+
+
+文件夹说明:
+test_dir : 测试文件地址，其中4.txt不是想要的格式，用于测试文件类别判断错误
+
+
+
+

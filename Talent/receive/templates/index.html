@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>智能人才评估与岗位推荐</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/icofont/icofont.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/animate.css/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/venobox/venobox.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/mystyle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style-2.css') }}">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@example.com</a>
+        <i class="icofont-phone"></i> +1 5589 55488 55
+      </div>
+      <div class="social-links float-right">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="index.html"><span>智能人才评估与岗位推荐</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">主页 <i class="la la-angle-down"></i></a></li>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#services">职位推荐</a></li>
+          <li><a href="#portfolio">人才搜寻</a></li>
+          <li><a href="#team">我们团队</a></li>
+          <li class="drop-down"><a href="">暂未开发</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">暂未开发</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url({{ url_for('static', filename='assets/img/slide/slide-1.jpg') }});">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animated fadeInDown">欢迎来到 <span>智能人才评估与岗位推荐</span></h2>
+                <p class="animated fadeInUp">在这里，您可以体验到到独有的智能化流程的人才市场，我们强大的团队将提供不同于市场上的特色智能化的服务。无论您是求贤若渴的HR，亦或是寻求伯乐的求职者，我们的智能化系统都将为您提供最适合的推荐...</p>
+                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url({{ url_for('static', filename='assets/img/slide/slide-2.jpg') }});">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animated fadeInDown">智能化职位推荐</h2>
+                <p class="animated fadeInUp">如果您是正在寻求伯乐的求职者，只需上传简历，我们强大的智能化系统即可根据简历分析出您的个性及能力，基于庞大的数据库为您推荐最合适的岗位...</p>
+                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url({{ url_for('static', filename='assets/img/slide/slide-3.jpg') }});">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animated fadeInDown">智能化人才搜索</h2>
+                <p class="animated fadeInUp">不论您是求贤若渴的公司亦或是猎头，只需提供需求岗位的各项指标，我们强大的智能化系统即可从万千求职者中找出最符合该岗位的人选...</p>
+                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-rounded-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-rounded-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+{#    <section id="about" class="about">#}
+{#      <div class="container">#}
+{##}
+{#        <div class="row no-gutters">#}
+{#          <div class="col-lg-6 video-box">#}
+{#            <img src="{{ url_for('static', filename='assets/img/about.jpg') }}" class="img-fluid" alt="">#}
+{#            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">#}
+{##}
+{#            <div class="section-title">#}
+{#              <h2>About Us</h2>#}
+{#              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>#}
+{#            </div>#}
+{##}
+{#            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">#}
+{#              <div class="icon"><i class="bx bx-fingerprint"></i></div>#}
+{#              <h4 class="title"><a href="">Lorem Ipsum</a></h4>#}
+{#              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>#}
+{#            </div>#}
+{##}
+{#            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">#}
+{#              <div class="icon"><i class="bx bx-gift"></i></div>#}
+{#              <h4 class="title"><a href="">Nemo Enim</a></h4>#}
+{#              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>#}
+{#            </div>#}
+{##}
+{#          </div>#}
+{#        </div>#}
+{##}
+{#      </div>#}
+{#    </section><!-- End About Us Section -->#}
+
+<div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+    <!-- ======= About Lists Section ======= -->
+{#    <section class="about-lists">#}
+{#      <div class="container">#}
+{##}
+{#        <div class="row no-gutters">#}
+{##}
+{#          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up">#}
+{#            <span>01</span>#}
+{#            <h4>Lorem Ipsum</h4>#}
+{#            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="100">#}
+{#            <span>02</span>#}
+{#            <h4>Repellat Nihil</h4>#}
+{#            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="200">#}
+{#            <span>03</span>#}
+{#            <h4> Ad ad velit qui</h4>#}
+{#            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">#}
+{#            <span>04</span>#}
+{#            <h4>Repellendus molestiae</h4>#}
+{#            <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="400">#}
+{#            <span>05</span>#}
+{#            <h4>Sapiente Magnam</h4>#}
+{#            <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="500">#}
+{#            <span>06</span>#}
+{#            <h4>Facilis Impedit</h4>#}
+{#            <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>#}
+{#          </div>#}
+{##}
+{#        </div>#}
+{##}
+{#      </div>#}
+{#    </section><!-- End About Lists Section -->#}
+
+    <!-- ======= Counts Section ======= -->
+{#    <section class="counts section-bg">#}
+{#      <div class="container">#}
+{##}
+{#        <div class="row">#}
+{##}
+{#          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up">#}
+{#            <div class="count-box">#}
+{#              <i class="icofont-simple-smile" style="color: #20b38e;"></i>#}
+{#              <span data-toggle="counter-up">232</span>#}
+{#              <p>Happy Clients</p>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">#}
+{#            <div class="count-box">#}
+{#              <i class="icofont-document-folder" style="color: #c042ff;"></i>#}
+{#              <span data-toggle="counter-up">521</span>#}
+{#              <p>Projects</p>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">#}
+{#            <div class="count-box">#}
+{#              <i class="icofont-live-support" style="color: #46d1ff;"></i>#}
+{#              <span data-toggle="counter-up">1,463</span>#}
+{#              <p>Hours Of Support</p>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">#}
+{#            <div class="count-box">#}
+{#              <i class="icofont-users-alt-5" style="color: #ffb459;"></i>#}
+{#              <span data-toggle="counter-up">15</span>#}
+{#              <p>Hard Workers</p>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#        </div>#}
+{##}
+{#      </div>#}
+{#    </section><!-- End Counts Section -->#}
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>智能人才评估与岗位推荐</h2>
+        </div>
+
+        <form method="post" enctype="multipart/form-data">
+        <div class="row justify-content-center">
+
+
+{#              <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">#}
+{##}
+{#              </div>#}
+
+
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                  <div id="mainarea" class="offset-md-3 offset-sm-3"><p style="font-size:15px;color:red"><strong>请正确的上传您的简历，支持docx格式。</strong></p>
+                      <input id="files_upload1" type="file" accept="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                      <br><br><br><br><p style="font-size:15px;color:red"><strong>请正确的上传您的视频，支持mp4格式。</strong></p>
+                      <input id="files_upload2" type="file" accept="video/mp4" />
+                  </div><br>
+                  <div class="offset-md-2 offset-sm-2"><a id="submit" class="fancy-button pop-onhover bg-gradient1"><span>开始测评</span></a>
+                <a id="reset" class="fancy-button pop-onhover bg-gradient1"><span>重新测试</span></a></div>
+              </div>
+
+
+
+
+<!--          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">-->
+<!--            <div class="icon"><i class="icofont-computer"></i></div>-->
+<!--            <h4 class="title"><a href="">Lorem Ipsum</a></h4>-->
+<!--            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>-->
+<!--          </div>-->
+<!--          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">-->
+<!--            <div class="icon"><i class="icofont-chart-bar-graph"></i></div>-->
+<!--            <h4 class="title"><a href="">Dolor Sitema</a></h4>-->
+<!--            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>-->
+<!--          </div>-->
+<!--          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">-->
+<!--            <div class="icon"><i class="icofont-earth"></i></div>-->
+<!--            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>-->
+<!--            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>-->
+<!--          </div>-->
+<!--          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">-->
+<!--            <div class="icon"><i class="icofont-image"></i></div>-->
+<!--            <h4 class="title"><a href="">Magni Dolores</a></h4>-->
+<!--            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>-->
+<!--          </div>-->
+<!--          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">-->
+<!--            <div class="icon"><i class="icofont-settings"></i></div>-->
+<!--            <h4 class="title"><a href="">Nemo Enim</a></h4>-->
+<!--            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>-->
+<!--          </div>-->
+<!--          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">-->
+<!--            <div class="icon"><i class="icofont-tasks-alt"></i></div>-->
+<!--            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>-->
+<!--            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>-->
+<!--          </div>-->
+        </div>
+        </form>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Our Portfolio Section ======= -->
+{#    <section id="portfolio" class="portfolio section-bg">#}
+{#      <div class="container" data-aos="fade-up" data-aos-delay="100">#}
+{##}
+{#        <div class="section-title">#}
+{#          <h2>Our Portfolio</h2>#}
+{#          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>#}
+{#        </div>#}
+{##}
+{#        <div class="row">#}
+{#          <div class="col-lg-12">#}
+{#            <ul id="portfolio-flters">#}
+{#              <li data-filter="*" class="filter-active">All</li>#}
+{#              <li data-filter=".filter-app">App</li>#}
+{#              <li data-filter=".filter-card">Card</li>#}
+{#              <li data-filter=".filter-web">Web</li>#}
+{#            </ul>#}
+{#          </div>#}
+{#        </div>#}
+{##}
+{#        <div class="row portfolio-container">#}
+{##}
+{#          <div class="col-lg-4 col-md-6 portfolio-item filter-app">#}
+{#            <div class="portfolio-wrap">#}
+{#              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-1.jpg') }}" class="img-fluid" alt="">#}
+{#              <div class="portfolio-info">#}
+{#                <h4>App 1</h4>#}
+{#                <p>App</p>#}
+{#                <div class="portfolio-links">#}
+{#                  <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-1.jpg') }}" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-eye"></i></a>#}
+{#                  <a href="#" title="More Details"><i class="icofont-external-link"></i></a>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-4 col-md-6 portfolio-item filter-web">#}
+{#            <div class="portfolio-wrap">#}
+{#              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-2.jpg') }}" class="img-fluid" alt="">#}
+{#              <div class="portfolio-info">#}
+{#                <h4>Web 3</h4>#}
+{#                <p>Web</p>#}
+{#                <div class="portfolio-links">#}
+{#                  <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-2.jpg') }}" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-eye"></i></a>#}
+{#                  <a href="#" title="More Details"><i class="icofont-external-link"></i></a>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-4 col-md-6 portfolio-item filter-app">#}
+{#            <div class="portfolio-wrap">#}
+{#              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-3.jpg') }}" class="img-fluid" alt="">#}
+{#              <div class="portfolio-info">#}
+{#                <h4>App 2</h4>#}
+{#                <p>App</p>#}
+{#                <div class="portfolio-links">#}
+{#                  <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-3.jpg') }}" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-eye"></i></a>#}
+{#                  <a href="#" title="More Details"><i class="icofont-external-link"></i></a>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-4 col-md-6 portfolio-item filter-card">#}
+{#            <div class="portfolio-wrap">#}
+{#              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-4.jpg') }}" class="img-fluid" alt="">#}
+{#              <div class="portfolio-info">#}
+{#                <h4>Card 2</h4>#}
+{#                <p>Card</p>#}
+{#                <div class="portfolio-links">#}
+{#                  <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-4.jpg') }}" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-eye"></i></a>#}
+{#                  <a href="#" title="More Details"><i class="icofont-external-link"></i></a>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-4 col-md-6 portfolio-item filter-web">#}
+{#            <div class="portfolio-wrap">#}
+{#              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-5.jpg') }}" class="img-fluid" alt="">#}
+{#              <div class="portfolio-info">#}
+{#                <h4>Web 2</h4>#}
+{#                <p>Web</p>#}
+{#                <div class="portfolio-links">#}
+{#                  <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-5.jpg') }}" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="icofont-eye"></i></a>#}
+{#                  <a href="#" title="More Details"><i class="icofont-external-link"></i></a>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-4 col-md-6 portfolio-item filter-app">#}
+{#            <div class="portfolio-wrap">#}
+{#              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-6.jpg') }}" class="img-fluid" alt="">#}
+{#              <div class="portfolio-info">#}
+{#                <h4>App 3</h4>#}
+{#                <p>App</p>#}
+{#                <div class="portfolio-links">#}
+{#                  <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-6.jpg') }}" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="icofont-eye"></i></a>#}
+{#                  <a href="#" title="More Details"><i class="icofont-external-link"></i></a>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-4 col-md-6 portfolio-item filter-card">#}
+{#            <div class="portfolio-wrap">#}
+{#              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-7.jpg') }}" class="img-fluid" alt="">#}
+{#              <div class="portfolio-info">#}
+{#                <h4>Card 1</h4>#}
+{#                <p>Card</p>#}
+{#                <div class="portfolio-links">#}
+{#                  <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-7.jpg') }}" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="icofont-eye"></i></a>#}
+{#                  <a href="#" title="More Details"><i class="icofont-external-link"></i></a>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-4 col-md-6 portfolio-item filter-card">#}
+{#            <div class="portfolio-wrap">#}
+{#              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-8.jpg') }}" class="img-fluid" alt="">#}
+{#              <div class="portfolio-info">#}
+{#                <h4>Card 3</h4>#}
+{#                <p>Card</p>#}
+{#                <div class="portfolio-links">#}
+{#                  <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-8.jpg') }}" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="icofont-eye"></i></a>#}
+{#                  <a href="#" title="More Details"><i class="icofont-external-link"></i></a>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-4 col-md-6 portfolio-item filter-web">#}
+{#            <div class="portfolio-wrap">#}
+{#              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-9.jpg') }}" class="img-fluid" alt="">#}
+{#              <div class="portfolio-info">#}
+{#                <h4>Web 3</h4>#}
+{#                <p>Web</p>#}
+{#                <div class="portfolio-links">#}
+{#                  <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-9.jpg') }}" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-eye"></i></a>#}
+{#                  <a href="#" title="More Details"><i class="icofont-external-link"></i></a>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#        </div>#}
+{##}
+{#      </div>#}
+{#    </section><!-- End Our Portfolio Section -->#}
+
+    <!-- ======= Our Team Section ======= -->
+{#    <section id="team" class="team">#}
+{#      <div class="container">#}
+{##}
+{#        <div class="section-title">#}
+{#          <h2>Our Team</h2>#}
+{#          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>#}
+{#        </div>#}
+{##}
+{#        <div class="row">#}
+{##}
+{#          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">#}
+{#            <div class="member">#}
+{#              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/team-1.jpg') }}" class="img-fluid" alt=""></div>#}
+{#              <div class="member-info">#}
+{#                <h4>Walter White</h4>#}
+{#                <span>Chief Executive Officer</span>#}
+{#                <div class="social">#}
+{#                  <a href=""><i class="icofont-twitter"></i></a>#}
+{#                  <a href=""><i class="icofont-facebook"></i></a>#}
+{#                  <a href=""><i class="icofont-instagram"></i></a>#}
+{#                  <a href=""><i class="icofont-linkedin"></i></a>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">#}
+{#            <div class="member">#}
+{#              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/team-2.jpg') }}" class="img-fluid" alt=""></div>#}
+{#              <div class="member-info">#}
+{#                <h4>Sarah Jhonson</h4>#}
+{#                <span>Product Manager</span>#}
+{#                <div class="social">#}
+{#                  <a href=""><i class="icofont-twitter"></i></a>#}
+{#                  <a href=""><i class="icofont-facebook"></i></a>#}
+{#                  <a href=""><i class="icofont-instagram"></i></a>#}
+{#                  <a href=""><i class="icofont-linkedin"></i></a>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">#}
+{#            <div class="member">#}
+{#              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/team-3.jpg') }}" class="img-fluid" alt=""></div>#}
+{#              <div class="member-info">#}
+{#                <h4>William Anderson</h4>#}
+{#                <span>CTO</span>#}
+{#                <div class="social">#}
+{#                  <a href=""><i class="icofont-twitter"></i></a>#}
+{#                  <a href=""><i class="icofont-facebook"></i></a>#}
+{#                  <a href=""><i class="icofont-instagram"></i></a>#}
+{#                  <a href=""><i class="icofont-linkedin"></i></a>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">#}
+{#            <div class="member">#}
+{#              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/team-4.jpg') }}" class="img-fluid" alt=""></div>#}
+{#              <div class="member-info">#}
+{#                <h4>Amanda Jepson</h4>#}
+{#                <span>Accountant</span>#}
+{#                <div class="social">#}
+{#                  <a href=""><i class="icofont-twitter"></i></a>#}
+{#                  <a href=""><i class="icofont-facebook"></i></a>#}
+{#                  <a href=""><i class="icofont-instagram"></i></a>#}
+{#                  <a href=""><i class="icofont-linkedin"></i></a>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#        </div>#}
+{##}
+{#      </div>#}
+{#    </section><!-- End Our Team Section -->#}
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+{#    <section id="faq" class="faq section-bg">#}
+{#      <div class="container">#}
+{##}
+{#        <div class="section-title">#}
+{#          <h2>Frequently Asked Questions</h2>#}
+{#        </div>#}
+{##}
+{#        <div class="row  d-flex align-items-stretch">#}
+{##}
+{#          <div class="col-lg-6 faq-item" data-aos="fade-up">#}
+{#            <h4>Non consectetur a erat nam at lectus urna duis?</h4>#}
+{#            <p>#}
+{#              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.#}
+{#            </p>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">#}
+{#            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>#}
+{#            <p>#}
+{#              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.#}
+{#            </p>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="200">#}
+{#            <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>#}
+{#            <p>#}
+{#              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.#}
+{#            </p>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="300">#}
+{#            <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>#}
+{#            <p>#}
+{#              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.#}
+{#            </p>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="400">#}
+{#            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>#}
+{#            <p>#}
+{#              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in#}
+{#            </p>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="500">#}
+{#            <h4>Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</h4>#}
+{#            <p>#}
+{#              Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.#}
+{#            </p>#}
+{#          </div>#}
+{##}
+{#        </div>#}
+{##}
+{#      </div>#}
+{#    </section><!-- End Frequently Asked Questions Section -->#}
+
+    <!-- ======= Contact Us Section ======= -->
+{#    <section id="contact" class="contact">#}
+{#      <div class="container">#}
+{##}
+{#        <div class="section-title">#}
+{#          <h2>Contact Us</h2>#}
+{#        </div>#}
+{##}
+{#        <div class="row">#}
+{##}
+{#          <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up">#}
+{#            <div class="info-box">#}
+{#              <i class="bx bx-map"></i>#}
+{#              <h3>Our Address</h3>#}
+{#              <p>A108 Adam Street, New York, NY 535022</p>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">#}
+{#            <div class="info-box">#}
+{#              <i class="bx bx-envelope"></i>#}
+{#              <h3>Email Us</h3>#}
+{#              <p>info@example.com<br>contact@example.com</p>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">#}
+{#            <div class="info-box ">#}
+{#              <i class="bx bx-phone-call"></i>#}
+{#              <h3>Call Us</h3>#}
+{#              <p>+1 5589 55488 55<br>+1 6678 254445 41</p>#}
+{#            </div>#}
+{#          </div>#}
+{##}
+{#          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">#}
+{#            <form action="forms/contact.php" method="post" role="form" class="php-email-form">#}
+{#              <div class="form-row">#}
+{#                <div class="col-lg-6 form-group">#}
+{#                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />#}
+{#                  <div class="validate"></div>#}
+{#                </div>#}
+{#                <div class="col-lg-6 form-group">#}
+{#                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />#}
+{#                  <div class="validate"></div>#}
+{#                </div>#}
+{#              </div>#}
+{#              <div class="form-group">#}
+{#                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />#}
+{#                <div class="validate"></div>#}
+{#              </div>#}
+{#              <div class="form-group">#}
+{#                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>#}
+{#                <div class="validate"></div>#}
+{#              </div>#}
+{#              <div class="mb-3">#}
+{#                <div class="loading">Loading</div>#}
+{#                <div class="error-message"></div>#}
+{#                <div class="sent-message">Your message has been sent. Thank you!</div>#}
+{#              </div>#}
+{#              <div class="text-center"><button type="submit">Send Message</button></div>#}
+{#            </form>#}
+{#          </div>#}
+{##}
+{#        </div>#}
+{##}
+{#      </div>#}
+{#    </section><!-- End Contact Us Section -->#}
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Mamba</h3>
+            <p>
+              A108 Adam Street <br>
+              NY 535022, USA<br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Mamba</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家"></a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank"></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='assets/vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/jquery.easing/jquery.easing.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/jquery-sticky/jquery.sticky.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/venobox/venobox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/waypoints/jquery.waypoints.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/counterup/counterup.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/myjs.js') }}"></script>
+
+  <!--  js section   -->
+<script>
+    var esti_list1 = ["拥有丰富的项目经验，技术功底较为扎实，能够独自完成Java开发项目。",
+    "具备一定的Java开发能力，也具备一定的项目经验，技术成熟度有待检验。",
+    "前端、后端开发都有所涉及，基本具备Java开发能力，综合能力较为全面。",
+    "能够按项目需求完成编码、测试等工作，能够承担一般性任务，适应能力强。"]
+    var esti_list2 = ["具备大数据分析、人工智能项目经历，熟悉Python编程语言，掌握若干深度学习框架。",
+    "项目经验丰富，能较好完成算法岗位相关工作，技术功底较为扎实。",
+    "在计算机视觉、自然语言处理等人工智能领域都有涉猎，掌握基本深度学习算法。",
+    "在具备算法知识的基础上，也能够承担开发类工作，适应能力较强吗，综合能力全面。"]
+    var esti_list3 = ["精通HTML、JavaScript、Ajax等前端开发技术，具备前端开发经验，能够独自承接工作。",
+    "拥有各类型前端开发经验，经历过商业化技术检验，适应能力较强。",
+    "熟悉PHP、HTML、CSS、Javascript等前端开发技术，从事过多个行业的前端开发工作。",
+    "有较强的学习能力和开发能力，热爱技术，具备各类大小网络系统的开发经验。"]
+    var esti_list4 = ["拥有丰富的团队管理经验，技术出身，从事行业多年，对行业的发展非常熟悉。",
+    "熟练掌握C语言、Java等编程语言，技术过硬，具备各类大小项目的开发经验。",
+    "精通前后端技术、掌握系统整体架构能力，具备团队管理经验和项目开发经验。",
+    "技术成熟且工作经验丰富，在计算机行业各个领域均有涉猎。"]
+    var esti_list5 = ["拥有丰富的数据库管理经验，掌握各类数据库管理和开发技术，具备多年工作经验。",
+    "熟悉各类数据处理方法、熟悉常见数据库管理系统，熟悉系统架构。",
+    "具备一定的项目经验，有多年数据库开发工作经验，一定的团队管理能力。",
+    "擅长数据管理和数据库开发，对底层架构有一定的认知，从业多年，经验较丰富。"]
+    var score_list1 = [[86,85,91,75,82],[74,78,80,76,72],[80,82,73,77,78],[72,76,73,86,79]]
+    var score_list2 = [[82,81,89,79,83],[89,81,86,77,80],[81,79,78,83,85],[80,82,78,87,86]]
+    var score_list3 = [[85,83,79,80,82],[87,84,81,89,79],[84,85,87,86,80],[87,78,81,79,89]]
+    var score_list4 = [[82,88,84,92,80],[89,82,86,80,82],[87,85,84,81,79],[86,86,87,91,79]]
+    var score_list5 = [[82,86,80,84,79],[81,78,80,82,80],[77,81,83,85,80],[79,82,84,80,77]]
+
+    var esti1 = ["情绪不稳定，容易产生悲观情绪，对工作积极性不高，需要在监督下完成工作。",
+    "自信心不足，难以很好地表达自己的想法，工作专注度不够，潜力不足。",
+    "面对压力容易出现负面情绪，抗压能力不足，情绪容易波动，不利于团队协作。"]
+    var esti2 = ["工作积极性一般，热情度不高，能够完成基本工作但无进步潜力。",
+    "甘于平庸，对新事物好奇度不足，难以持续提升自己的能力。",
+    "进取心不高，语言表达能力一般，对工作的专注度和认真程度尚待加强。"]
+    var esti3 = ["乐观自信，对工作有较高的积极性，乐于接受挑战，谋求进步。",
+    "能够很好地胜任工作，对工作专注且认真，有较强的抗压能力。",
+    "为人处世积极乐观，语言表达能力较强，在团队中是很好的催化剂。"]
+    var score1 = [[55,49,57,50,52],[52,45,60,57,62],[51,48,50,52,47]]
+    var score2 = [[67,72,69,75,70],[65,62,71,69,75],[67,62,70,60,71]]
+    var score3 = [[82,87,80,81,83],[81,84,89,82,87],[87,88,83,90,86]]
+
+
+    var file_word = null
+    var file_video = null
+    document.getElementById('files_upload1').addEventListener('change', function(){
+        file_word = this.files[0];
+    }, false);
+    document.getElementById('files_upload2').addEventListener('change', function(){
+        file_video = this.files[0];
+    }, false);
+
+    $("#submit").bind("click",function(){
+        var tmp = new FormData();
+        if (file_word && !file_video){
+            $("#mainarea").empty();
+        $("#mainarea").append('<div class="loader2 col-md-4 offset-md-3 offset-sm-3">\n' +
+                    '                                <div>正</div>\n' +
+                    '                                <div>在</div>\n' +
+                    '                                <div>处</div>\n' +
+                    '                                <div>理</div>\n' +
+                    '                                <div>中</div>\n' +
+                    '                            </div><br><br><br><br>');
+            tmp.append('file', file_word)
+            {#tmp.append('csrfmiddlewaretoken','{{ csrf_token }}')#}
+            $.ajax({
+                type:"post",
+                url:"/api/upload",
+                data:tmp,
+                dataType:"text",
+                contentType: false,
+                processData: false,
+                cache:"False",
+                async:true,
+                success:function(result){
+                    var str = new String()
+                    var t = Math.round(Math.random() * 3)
+                    if (result == "JAVA开发工程师"){
+                        str = "<strong>您适合的岗位是：</strong> " + result + "<br>" + "<strong>系统评价：</strong> " + esti_list1[t] + "<br>" + "<strong>技术能力：</strong>    " +score_list1[t][0]+ "<br>"+ "<strong>工作经验：</strong>    " +score_list1[t][1]+ "<br>"+ "<strong>项目经历：</strong>    " +score_list1[t][2]+ "<br>"+ "<strong>适应能力：</strong>    " +score_list1[t][3]+ "<br>"+ "<strong>学习能力：</strong>    " +score_list1[t][4]+ "<br>"
+                        document.getElementById("mainarea").innerHTML = '<p>' + str + '</p>'
+                    }
+                    else if (result == "算法工程师"){
+                        str = "<strong>您适合的岗位是：</strong> " + result + "<br>" + "<strong>系统评价：</strong> " + esti_list2[t] + "<br>" + "<strong>技术能力：</strong>    " +score_list2[t][0]+ "<br>"+ "<strong>工作经验：</strong>    " +score_list2[t][1]+ "<br>"+ "<strong>项目经历：</strong>    " +score_list2[t][2]+ "<br>"+ "<strong>适应能力：</strong>    " +score_list2[t][3]+ "<br>"+ "<strong>学习能力：</strong>    " +score_list2[t][4]+ "<br>"
+                        document.getElementById("mainarea").innerHTML = '<p>' + str + '</p>'
+                    }
+                    else if (result == "Web前端开发"){
+                        str = "<strong>您适合的岗位是：</strong> " + result + "<br>" + "<strong>系统评价：</strong> " + esti_list3[t] + "<br>" + "<strong>技术能力：</strong>    " +score_list3[t][0]+ "<br>"+ "<strong>工作经验：</strong>    " +score_list3[t][1]+ "<br>"+ "<strong>项目经历：</strong>    " +score_list3[t][2]+ "<br>"+ "<strong>适应能力：</strong>    " +score_list3[t][3]+ "<br>"+ "<strong>学习能力：</strong>    " +score_list3[t][4]+ "<br>"
+                        document.getElementById("mainarea").innerHTML = '<p>' + str + '</p>'
+                    }
+                    else if (result == "技术总监"){
+                        str = "<strong>您适合的岗位是：</strong> " + result + "<br>" + "<strong>系统评价：</strong> " + esti_list4[t] + "<br>" + "<strong>技术能力：</strong>    " +score_list4[t][0]+ "<br>"+ "<strong>工作经验：</strong>    " +score_list4[t][1]+ "<br>"+ "<strong>项目经历：</strong>    " +score_list4[t][2]+ "<br>"+ "<strong>适应能力：</strong>    " +score_list4[t][3]+ "<br>"+ "<strong>学习能力：</strong>    " +score_list4[t][4]+ "<br>"
+                        document.getElementById("mainarea").innerHTML = '<p>' + str + '</p>'
+                    }
+                    else if (result == "数据库工程师"){
+                        str = "<strong>您适合的岗位是：</strong> " + result + "<br>" + "<strong>系统评价：</strong> " + esti_list5[t] + "<br>" + "<strong>技术能力：</strong>    " +score_list5[t][0]+ "<br>"+ "<strong>工作经验：</strong>    " +score_list5[t][1]+ "<br>"+ "<strong>项目经历：</strong>    " +score_list5[t][2]+ "<br>"+ "<strong>适应能力：</strong>    " +score_list5[t][3]+ "<br>"+ "<strong>学习能力：</strong>    " +score_list5[t][4]+ "<br>"
+                        document.getElementById("mainarea").innerHTML = '<p>' + str + '</p>'
+                    }
+                    else{
+                        str = "分析失败"
+                        document.getElementById("mainarea").innerHTML = '<p>' + str + '</p>'
+                    }
+                    file_word = null
+                    file_video = null
+                },
+                error:function(){
+                    alert("服务器出了点问题，刷新一下就好啦！");
+                    window.location.reload();
+                }
+            })
+        }else if (!file_word && file_video){
+            $("#mainarea").empty();
+        $("#mainarea").append('<div class="loader2 col-md-4 offset-md-3 offset-sm-3">\n' +
+                    '                                <div>正</div>\n' +
+                    '                                <div>在</div>\n' +
+                    '                                <div>处</div>\n' +
+                    '                                <div>理</div>\n' +
+                    '                                <div>中</div>\n' +
+                    '                            </div><br><br><br><br>');
+            tmp.append('file', file_video)
+            {#tmp.append('csrfmiddlewaretoken','{{ csrf_token }}')#}
+            $.ajax({
+                type:"post",
+                url:"/api/upload",
+                data:tmp,
+                dataType:"text",
+                contentType: false,
+                processData: false,
+                cache:"False",
+                async:true,
+                success:function(result){
+                    var str = new String("职业性格分析：")
+                    var t = Math.round(Math.random() * 2)
+                    if (result == "隐含情绪不稳定因素"){
+                        str = "<strong>您适合的岗位是：</strong> " + result + "<br>" + "<strong>系统评价：</strong> " + esti1[t] + "<br>" + "<strong>积极性：</strong>    " +score1[t][0]+ "<br>"+ "<strong>自信心：</strong>    " +score1[t][1]+ "<br>"+ "<strong>抗压能力：</strong>    " +score1[t][2]+ "<br>"+ "<strong>语言表达：</strong>    " +score1[t][3]+ "<br>"+ "<strong>专注度：</strong>    " +score1[t][4]+ "<br>"
+                        document.getElementById("mainarea").innerHTML = '<p>' + str + '</p>'
+                    }
+                    else if (result == "进步潜力一般"){
+                        str = "<strong>您适合的岗位是：</strong> " + result + "<br>" + "<strong>系统评价：</strong> " + esti1[t] + "<br>" + "<strong>积极性：</strong>    " +score1[t][0]+ "<br>"+ "<strong>自信心：</strong>    " +score1[t][1]+ "<br>"+ "<strong>抗压能力：</strong>    " +score1[t][2]+ "<br>"+ "<strong>语言表达：</strong>    " +score1[t][3]+ "<br>"+ "<strong>专注度：</strong>    " +score1[t][4]+ "<br>"
+                        document.getElementById("mainarea").innerHTML = '<p>' + str + '</p>'
+                    }
+                    else if (result == "乐于接受工作挑战"){
+                        str = "<strong>您适合的岗位是：</strong> " + result + "<br>" + "<strong>系统评价：</strong> " + esti1[t] + "<br>" + "<strong>积极性：</strong>    " +score1[t][0]+ "<br>"+ "<strong>自信心：</strong>    " +score1[t][1]+ "<br>"+ "<strong>抗压能力：</strong>    " +score1[t][2]+ "<br>"+ "<strong>语言表达：</strong>    " +score1[t][3]+ "<br>"+ "<strong>专注度：</strong>    " +score1[t][4]+ "<br>"
+                        document.getElementById("mainarea").innerHTML = '<p>' + str + '</p>'
+                    }
+                    else{
+                        str = "分析失败"
+                        document.getElementById("mainarea").innerHTML = '<p>' + str + '</p>'
+                    }
+                    file_word = null
+                    file_video = null
+                },
+                error:function(){
+                    alert("服务器出了点问题，刷新一下就好啦！");
+                    window.location.reload();
+                }
+            })
+        }});
+        $("#reset").bind("click",function(){
+            window.location.reload();
+        })
+
+
+
+  </script>
+
+
+</body>
+
+</html>
